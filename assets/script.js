@@ -53,13 +53,13 @@ for (let i = 0 ; i < teamMembers.length; i++){
     //console.log(member);
 
     let markup =  `<div class="col-4">
-                <div class="card">
-                    <img src="${img}" alt="">
-                    <h3>${name}</h3>
-                    <p>${role}</p>
-                    <p>${email}</p>
-                </div>
-              </div>`
+                    <div class="card bg-dark">
+                        <img src="${img}" alt="">
+                        <h3>${name}</h3>
+                        <p>${role}</p>
+                        <p>${email}</p>
+                    </div>
+                  </div>`
   
   //all'interno del ciclo modifico la row unendo il markup tramite innerHTML
 
