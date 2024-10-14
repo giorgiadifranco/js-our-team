@@ -53,10 +53,13 @@ for (let i = 0 ; i < teamMembers.length; i++){
     //console.log(member);
 
     let markup =  `
-                  <div class="col-4 g-5">
+                  <div class="card bg-dark p-2 d-flex flex-sm-row w-80 ">
+                    <div class="col-sm-3 col-lg-2">
+                      <img  class="w-100" src="${img}" alt="">
+                    </div>
                   
-                    <div class="card bg-dark p-2">
-                        <img  class="float-start w-20 h-120" src="${img}" alt="">
+                    
+                    <div class="col-sm-9 col-lg-4 g-5 p-2">
                         <h3 class="text-white p-1 py-2">${name}</h3>
                         <p class="text-white p-1">${role}</p>
                         <p class="text-primary p-1">${email}</p>
