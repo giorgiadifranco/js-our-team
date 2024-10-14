@@ -52,12 +52,8 @@ for (let i = 0 ; i < teamMembers.length; i++){
 
     //console.log(member);
 
-    let markup =  `<div class="col-1 my-2">
-                    <div class="card d-flex ">
-                    
-                    </div>
-                  </div>
-                  <div class="col-2 ">
+    let markup =  `
+                  <div class="col-3 g-5">
                   
                     <div class="card bg-dark p-2">
                         <img  class="float-start w-5" src="${img}" alt="">
