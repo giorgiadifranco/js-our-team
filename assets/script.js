@@ -39,13 +39,30 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
-
-
+//recupero la row del markup con querySelector
+let rowEl = document.querySelector('.row')
+//creo un ciclo for per inserire gli oggetti nel markup
 for (let i = 0 ; i < teamMembers.length; i++){
-
+    //salvo il singolo elemento di un array in una variabile
     let  member = teamMembers[i];
 
-    console.log(member);
+    //destrutturo l'oggetto per estrarre il valore e poi inserirlo nel markup
 
+    let {name, role, email, img} = member;
+
+    //console.log(member);
+
+    let markup =  `<div class="col-4">
+                <div class="card">
+                    <img src="${img}" alt="">
+                    <h3>${name}</h3>
+                    <p>${role}</p>
+                    <p>${email}</p>
+                </div>
+              </div>`
+  
+  //all'interno del ciclo modifico la row unendo il markup tramite innerHTML
+
+  rowEl.innerHTML += markup
         
 }
